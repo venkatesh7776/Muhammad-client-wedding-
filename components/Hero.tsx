@@ -66,7 +66,15 @@ export function Hero() {
           </p>
 
           <p className="announcement" data-reveal>
-            {COPY.announcement}
+            {/* the invocation stands on a line of its own, as on the card */}
+            <span className="announcement__line">
+              {COPY.blessing}{" "}
+              <span className="salawat" lang="ar">
+                {COPY.salawat}
+              </span>
+              .
+            </span>{" "}
+            <span className="announcement__line">{COPY.announcement}</span>
           </p>
 
           <div className="names">

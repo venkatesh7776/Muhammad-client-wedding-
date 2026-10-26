@@ -34,9 +34,8 @@ export function Celebrations() {
 
       const head = q("[data-celebrate-head] > *:not([data-ornament])");
       const cards = q(".rail__item"); // the card and the gem beside it, together
-      const closing = q("[data-closing] > *");
 
-      gsap.set([head, cards, closing], { opacity: 0, y: REVEAL.rise });
+      gsap.set([head, cards], { opacity: 0, y: REVEAL.rise });
       gsap.set(q("[data-ornament-rule]"), { opacity: 0, scaleX: 0 });
       gsap.set(q("[data-ornament-star]"), { opacity: 0 });
 
@@ -124,9 +123,6 @@ export function Celebrations() {
       window.addEventListener("load", settle);
       if (document.fonts?.ready) void document.fonts.ready.then(settle);
 
-      onEnter(q("[data-closing]")[0], "top 85%")
-        .to(closing, { opacity: 1, y: 0, duration: REVEAL.line, ease: EASE, stagger: 0.18 }, 0);
-
       return () => {
         window.removeEventListener("load", settle);
         unpin?.();
@@ -180,17 +176,6 @@ export function Celebrations() {
           </div>
         </div>
       </div>
-
-      <footer className="closing" data-closing>
-        <span className="closing__crescent" aria-hidden>
-          <Crescent size={24} />
-        </span>
-        <p className="closing__title">{CELEBRATION_COPY.closingTitle}</p>
-        <p className="closing__line">{CELEBRATION_COPY.closingLine}</p>
-        <span className="closing__star" aria-hidden>
-          <Star size={14} />
-        </span>
-      </footer>
     </section>
   );
 }

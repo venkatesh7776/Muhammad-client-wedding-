@@ -19,9 +19,11 @@ export const COPY = {
   bismillah:
     "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
   /** Announcement under the Bismillah */
-  announcement:
-    "Allah to be praised & salutations to His Most Merciful Prophet. " +
-    "With the blessings of Huzoor Gaus-e-Azam & Khwaja Moinuddin Chishti",
+  /** The invocation, as on the card: every word capitalised, ending on the salawat. */
+  blessing: "Allah To Be Praised & Salutations To His Most Merciful Prophet",
+  /** ﷺ — "peace and blessings be upon him", set after the Prophet's name. */
+  salawat: "\uFDFA",
+  announcement: "With the blessings of Huzoor Gaus-\u2060e-\u2060Azam & Khwaja Moinuddin Chishti",
   bride: "Ayesha",
   groom: "Mohammad Adnan",
   /** Kept for metadata; the hero no longer shows a date or place. */

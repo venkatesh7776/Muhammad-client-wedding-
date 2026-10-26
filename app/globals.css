@@ -293,6 +293,16 @@ html.is-holding body {
   color: color-mix(in srgb, var(--color-ink) 88%, transparent);
 }
 
+.announcement__line { display: block; }
+
+/* ﷺ — the UI face has no Arabic, so it is set in Amiri, and a touch larger
+   because the ligature is drawn small for its width */
+.salawat {
+  font-family: var(--font-amiri), serif;
+  font-size: 1.3em;
+  line-height: 1;
+}
+
 .names {
   display: flex;
   flex-direction: column;
@@ -450,7 +460,8 @@ html.is-holding body {
   .amp__rule--right { width: 15vw; }
   .amp__mark { font-size: clamp(26px, 7.4vw, 46px); }
 
-  .announcement { font-size: 12px; line-height: 1.6; }
+  /* narrower than the names, so the lines stay clear of the vine curtains */
+  .announcement { font-size: 12px; line-height: 1.6; max-width: 66vw; margin-inline: auto; }
 
   /* Couple: 254x238, centred, standing on the bottom edge. */
   .hero__couple {

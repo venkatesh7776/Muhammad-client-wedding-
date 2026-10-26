@@ -60,6 +60,4 @@ export const CELEBRATIONS: Celebration[] = [
 export const CELEBRATION_COPY = {
   title: "The Wedding Celebrations",
   lede: "Three beautiful moments, one beautiful beginning.",
-  closingTitle: "Three celebrations, one beautiful beginning.",
-  closingLine: "We look forward to celebrating these precious moments with you.",
 } as const;
