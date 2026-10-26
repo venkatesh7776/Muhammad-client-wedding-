@@ -147,11 +147,12 @@ export function Invitation() {
         CUE.textIn,
       );
 
-      /* ---- Then the gold fills them, left to right: the loading itself ---- */
+      /* ---- Then the gold fills them, right to left as the Arabic reads:
+             the loading itself ---- */
       tl.to(
         q("[data-verse-fill]"),
         {
-          clipPath: "inset(0 0% 0 0)",
+          clipPath: "inset(0 0 0 0%)",
           duration: CUE.verseFillDuration,
           ease: "none",
         },

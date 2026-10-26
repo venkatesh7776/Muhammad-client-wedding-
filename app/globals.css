@@ -124,12 +124,13 @@ html.is-holding body {
   color: var(--color-on-dark);
 }
 
-/* the gold copy sits exactly over the white one and is uncovered left to right */
+/* the gold copy sits exactly over the white one and is uncovered right to left,
+   the way the Arabic is read */
 .verse__fill {
   position: absolute;
   inset: 0;
   color: var(--color-gold-loader);
-  clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 0 0 100%);
   will-change: clip-path;
 }
 

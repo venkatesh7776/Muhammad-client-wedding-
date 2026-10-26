@@ -5,7 +5,7 @@ import { COPY } from "@/lib/copy";
  * Loader — Figma node 112:42.
  *
  * The verse and its translation settle in first; only then does the verse
- * itself become the progress indicator, filling with gold from the left.
+ * itself become the progress indicator, filling with gold from the right, the way it is read.
  *
  * It is set in Amiri — a classical naskh cut for Qur'anic typesetting, so the
  * tashkeel sit properly — rather than the flattened outlines it used to be.

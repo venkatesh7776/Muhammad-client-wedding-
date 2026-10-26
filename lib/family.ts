@@ -40,7 +40,7 @@ export const BRIDE: Person = {
   role: "The Bride",
   name: "Ayesha",
   relation: "Daughter of",
-  parents: ["Hajiyani Rubina", "Haji Mohammad Aqeel Ghaniwala, Dariyapur"],
+  parents: ["Hajiyani Rubina", "Haji Mohammad Akil Ghaniwala, Dariyapur"],
   siblingsRelation: "Sister of",
   siblings: [],
   portrait: null,

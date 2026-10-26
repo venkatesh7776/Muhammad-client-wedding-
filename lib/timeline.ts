@@ -11,7 +11,7 @@ export const CUE = {
   textInDuration: 1.0,
   textInStagger: 0.16,
 
-  /** Only then does the gold fill run, left to right — the loading itself. */
+  /** Only then does the gold fill run, right to left as the Arabic reads — the loading itself. */
   verseFill: 1.5,
   verseFillDuration: 2.2,
 
