@@ -1,0 +1,43 @@
+/* ==========================================================================
+   THE NIGHT
+
+   Venues & Directions and the Countdown are one scene, not two. This wrapper
+   holds the single picture that runs behind them both — lattice sky at the
+   head, open water through the middle, the skyline arriving at the foot — so
+   the guest scrolls down through it rather than across a seam between two
+   crops of the same artwork.
+
+   Neither section inside may set a background or an isolated stacking context
+   of its own; both would cut it off from this.
+   ========================================================================== */
+
+.night {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  overflow: clip;
+  /* The section IS the picture: 1440x1433, so `cover` fits it exactly — no
+     crop, no upscale, nothing added. The content is cut to fit this, not the
+     other way round. A phone is far too narrow to hold it, so there the
+     height goes back to the content (see the foot of this file). */
+  aspect-ratio: 1440 / 1433;
+}
+
+.night__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* The picture, and nothing else — no wash, no scrim, no colour behind it. */
+.night__bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+@media (max-width: 860px) {
+  /* 393 wide would mean 391 tall — nothing would fit. The content rules here. */
+  .night { aspect-ratio: auto; }
+}

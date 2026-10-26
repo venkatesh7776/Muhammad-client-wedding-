@@ -1,0 +1,42 @@
+import { Invitation } from "@/components/Invitation";
+import { MusicToggle } from "@/components/MusicToggle";
+import { Celebrations } from "@/components/celebrate/Celebrations";
+import { Closing } from "@/components/closing/Closing";
+import { Countdown } from "@/components/countdown/Countdown";
+import { Night } from "@/components/night/Night";
+import { Sparkles } from "@/components/sparkles/Sparkles";
+import { Assistance } from "@/components/contact/Assistance";
+import { DressCode } from "@/components/dress/DressCode";
+import { Lanterns } from "@/components/lanterns/Lanterns";
+import { MeetTheCouple } from "@/components/meet/MeetTheCouple";
+import { LeaveMessage } from "@/components/message/LeaveMessage";
+import { SHOW_DRESS_CODE } from "@/lib/dresscode";
+import { SHOW_MESSAGE } from "@/lib/messages";
+import { Rsvp } from "@/components/rsvp/Rsvp";
+import { Venues } from "@/components/venues/Venues";
+
+export default function Page() {
+  return (
+    <main>
+      {/* two layers for the whole page, above every section and outside them
+          all: the sparks carry across it and the lanterns hang over them */}
+      <Sparkles />
+      <Lanterns />
+      <Invitation />
+      <MeetTheCouple />
+      <Celebrations />
+      {/* one picture behind both: the venue cards sit under its sky, the
+          clock above its skyline */}
+      <Night>
+        <Venues />
+        <Countdown />
+      </Night>
+      <Rsvp />
+      {SHOW_DRESS_CODE && <DressCode />}
+      {SHOW_MESSAGE && <LeaveMessage />}
+      <Assistance />
+      <Closing />
+      <MusicToggle />
+    </main>
+  );
+}

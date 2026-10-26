@@ -1,0 +1,119 @@
+/* ==========================================================================
+   SECTION 7 — LEAVE A MESSAGE
+   The last of the daylight sections: same ivory, lattice and gold rules, with
+   the form set as a single sheet of stationery the guest writes on.
+   ========================================================================== */
+
+.message {
+  --navy: #00263e; /* sampled from the backdrop so the edges blend */
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  overflow: clip;
+  padding: clamp(78px, 9vw, 130px) clamp(20px, 5vw, 64px) clamp(96px, 11vw, 150px);
+  background: var(--navy);
+  color: var(--cream, #f5efe3);
+}
+
+.message__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.message__bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* softens the joins with the ivory sections either side */
+.message__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--navy) 0,
+    rgba(0, 38, 62, 0) 14%,
+    rgba(0, 38, 62, 0) 86%,
+    var(--navy) 100%
+  );
+}
+
+/* ---------- One centred column ---------- */
+
+.message__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(34px, 4.6vw, 62px);
+  line-height: 1.06;
+  text-wrap: balance;
+  color: #f5efe3;
+}
+
+.message__ornament { margin-top: clamp(16px, 2vw, 26px); }
+
+/* the shared ornament art is ink-coloured; on navy it reads as gold instead */
+.message .ornament__rule { filter: brightness(0) saturate(100%) invert(72%) sepia(19%) saturate(830%) hue-rotate(2deg) brightness(90%) contrast(86%); }
+.message .ornament__star { color: #b89a61; }
+.message .ornament__star svg circle { fill: #00263e; }
+
+.message__intro {
+  max-width: 620px;
+  margin: clamp(20px, 2.4vw, 30px) 0 0;
+  font-family: var(--font-ui);
+  font-variation-settings: "opsz" 14, "wdth" 100;
+  font-size: clamp(14.5px, 1.25vw, 17px);
+  line-height: 1.7;
+  text-wrap: balance;
+  color: rgba(245, 239, 227, 0.82);
+}
+
+/* ---------- The button ---------- */
+
+.message__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  margin-top: clamp(28px, 3.4vw, 44px);
+  padding: 0 clamp(28px, 3.2vw, 44px);
+  font-family: var(--font-ui);
+  font-variation-settings: "opsz" 14, "wdth" 100;
+  font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #0a2f45;
+  background: linear-gradient(to bottom, #f0e3c6, #d8bc86);
+  border: 1px solid rgba(240, 220, 175, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 16px 24px -16px rgba(0, 20, 34, 0.9);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.message__cta:hover,
+.message__cta:focus-visible {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 860px) {
+  .message { padding: clamp(60px, 11vw, 92px) 20px clamp(72px, 12vw, 104px); }
+  .message__intro { font-size: clamp(13.5px, 3.7vw, 16px); }
+  .message__cta { width: 100%; }
+}
