@@ -6,7 +6,7 @@ export const RSVP_COPY = {
   body: ["Please confirm your presence to help us prepare for your arrival."],
   /** Who the invitation is from, set under the request. */
   hostsLabel: "Cordially invited by",
-  hosts: "Mrs. Hajiyani Zainab & Mr. Haji Abdul Majeed Motlani",
+  hosts: "Late Mrs Hajiyani Zainab & Mr Haji Abdul Majeed Motlani",
   cta: "Submit RSVP",
 } as const;
 

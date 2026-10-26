@@ -43,7 +43,7 @@ export const VENUES: Venue[] = [
     art: "/assets/images/2reception.png",
     name: "Motlani Compound",
     short: "Motlani Compound, Malegaon",
-    address: ["Beside Reliable Compound,", "Old Agra Road, Malegaon"],
+    address: ["Near RR Box Cricket,", "Old Agra Road, Malegaon"],
     mapUrl: "https://maps.app.goo.gl/ycqCK85KZQ9r8iBK8?g_st=iw",
     when: "Sunday, 20 & Monday, 21 December 2026 · 8:00 PM onwards",
   },
