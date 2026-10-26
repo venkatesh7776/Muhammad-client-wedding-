@@ -1,5 +1,5 @@
 /**
- * Section 2 — Meet the Groom & Bride. Copy is as supplied; do not reword.
+ * Section 2 — Meet Our Groom & Bride. Copy is as supplied; do not reword.
  *
  * Portraits: drop the real photographs into /public/assets/images and set
  * `portrait` to their path (e.g. "/assets/images/bride.jpg"). Until then the
@@ -47,7 +47,7 @@ export const BRIDE: Person = {
 };
 
 export const SECTION = {
-  title: "Meet the Groom & Bride",
+  title: "Meet Our Groom & Bride",
   lede: "Two families, one beautiful beginning.",
   spouseOf: "Spouse of",
 } as const;

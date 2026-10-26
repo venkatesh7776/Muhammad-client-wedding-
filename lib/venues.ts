@@ -35,7 +35,7 @@ export const VENUES: Venue[] = [
     short: "The Grand Jalsa, Akola",
     address: ["Akola"],
     mapUrl: "https://maps.app.goo.gl/R8gG2oNuGvpHUfqV6?g_st=iw",
-    when: "Friday, 18 December 2026 · After Namaz Asr",
+    when: "Friday, 18 December 2026 · After Namaz Asar",
     primary: true,
   },
   {
@@ -45,7 +45,7 @@ export const VENUES: Venue[] = [
     short: "Motlani Compound, Malegaon",
     address: ["Near RR Box Cricket,", "Old Agra Road, Malegaon"],
     mapUrl: "https://maps.app.goo.gl/ycqCK85KZQ9r8iBK8?g_st=iw",
-    when: "Sunday, 20 & Monday, 21 December 2026 · 8:00 PM onwards",
+    when: "Sunday, 20 & Monday, 21 December 2026 · 8:00 PM Onwards",
   },
 ];
 
