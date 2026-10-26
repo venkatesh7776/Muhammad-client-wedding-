@@ -23,7 +23,7 @@ export const COPY = {
     "Allah to be praised & salutations to His Most Merciful Prophet. " +
     "With the blessings of Huzoor Gaus-e-Azam & Khwaja Moinuddin Chishti",
   bride: "Ayesha",
-  groom: "Muhammad Athar",
+  groom: "Mohammad Adnan",
   /** Kept for metadata; the hero no longer shows a date or place. */
   date: "Friday, 18 December 2026",
   place: "The Grand Jalsa, Akola",

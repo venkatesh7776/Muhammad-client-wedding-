@@ -86,5 +86,5 @@ Hero-50% reuses `hero-background.png` and `pillar.png` — no extra files needed
 
 - Bismillah: `بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ`
 - Loader verse: `وَخَلَقْنَاكُمْ أَزْوَاجًا`
-- Names: **Muhammad Athar** & **Ayesha**
+- Names: **Mohammad Adnan** & **Ayesha**
 - Date: Friday, 18 December 2026 · Venue: The Grand Jalsa, Akola

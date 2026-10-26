@@ -27,7 +27,7 @@ export type Person = {
 
 export const GROOM: Person = {
   role: "The Groom",
-  name: "Muhammad Athar",
+  name: "Mohammad Adnan",
   credential: "C.A",
   relation: "Son of",
   parents: ["Hajiyani Shabina", "Haji Asif Abdul Majid Motlani"],

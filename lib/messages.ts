@@ -27,6 +27,6 @@ export const SHOW_MESSAGE = Boolean(MESSAGE_URL || MESSAGE_TO);
 
 export const MESSAGE_MAILTO =
   `mailto:${MESSAGE_TO ?? ""}?subject=` +
-  encodeURIComponent("A message for Muhammad Athar & Ayesha") +
+  encodeURIComponent("A message for Mohammad Adnan & Ayesha") +
   "&body=" +
   encodeURIComponent("Your message:\n\n— ");

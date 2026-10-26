@@ -84,7 +84,7 @@ const amiri = Amiri({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Athar & Ayesha",
+  title: "Mohammad Adnan & Ayesha",
   description: "Nikah — Friday, 18 December 2026 · The Grand Jalsa, Akola",
 };
 

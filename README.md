@@ -1,4 +1,4 @@
-# Muhammad Athar & Ayesha — wedding invitation
+# Mohammad Adnan & Ayesha — wedding invitation
 
 Next.js 15 (App Router, TypeScript) + GSAP. One page, one master timeline.
 

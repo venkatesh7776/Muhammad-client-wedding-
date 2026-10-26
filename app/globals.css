@@ -434,7 +434,7 @@ html.is-holding body {
 
   .name {
     height: auto;
-    /* sized so "Muhammad Athar" stays on one line at 360px and up */
+    /* sized so "Mohammad Adnan" stays on one line at 360px and up */
     font-size: clamp(31px, 9vw, 54px);
     white-space: nowrap;
     line-height: 1.1;
